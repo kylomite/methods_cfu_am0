@@ -72,6 +72,22 @@ puts name2.index("r")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+num1 = 1738
+num2 = 2121
+
+puts num1.to_f
+# The .to_f method is called on the num1 variable, which stores the integer "1738". 
+# The .to_f method requires no argument and returns a float if the data in the variable being called on is 
+# an integer
+# In this example, the return value is 1738.0 which shows the value of num1 being converted from an integer
+# to a float
+# The puts command prints the return value of the to_f method (true) to the console.
+
+puts num2.size
+# The size method is called on the num2 variable, which stores the integer 2121. 
+# The size method returns the number of bytes the value of the variable requires
+# In this example, the return is an integer value  of 8 
+# The puts command prints the return value of the .size? method (t8) to the console.
 
 
 # SECTION 4: Calling methods on variables assigned to arrays.
@@ -79,3 +95,21 @@ puts name2.index("r")
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+arr1 = ["Luffy", "Zoro", "Nami", "Usopp", "Sanji", "Chopper", "Robin"]
+arr2 = [1, 3, 25, 2, 13] 
+
+puts arr1.take(4)
+# The .take() method is called on the arr1 variable, which stores the array ["Luffy", "Zoro", "Nami", "Usopp", "Sanji", "Chopper", "Robin"]
+# The .take() method utilizes an integer argument (n) to returns a sub-array containg the first
+# nth many elements 
+# In this example, the return is a sub-array of ["Luffy", "Zoro", "Nami", "Usopp"]
+# The puts command prints the return value of the .take() method (["Luffy", "Zoro", "Nami", "Usopp"]) 
+# to the console.
+
+
+puts arr2.sort
+# The .sort method is called on the arr2 variable, which stores the array [1, 3, 25, 2, 13]
+# The .sort method returns a list with all the same elements sorted in accending order
+# In this example, the return value [1, 2, 3, 13, 25]
+# The puts command prints the return value of the .sort method ([1, 2, 3, 13, 25]) to the console.
